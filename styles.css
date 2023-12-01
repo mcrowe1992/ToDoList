@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -9,14 +9,46 @@ body {
 }
 
 .container {
-    text-align: center;
-    background-color: #fff;
+    text-align: left;
+    background-color: #f8f5ed; /* Notepad color */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjust as needed */
+}
+
+#taskContainer {
+    margin-top: 15px;
+}
+
+.task {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .completed {
     text-decoration: line-through;
     color: #888;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #e74c3c; /* Red color for Remove button */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #c0392b; /* Darker red on hover */
 }
